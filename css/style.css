@@ -4,6 +4,7 @@
  * Copyright 2011-2018 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
+ 
 :root {
   --blue: #007bff;
   --indigo: #6610f2;
@@ -8225,7 +8226,8 @@ h1, h2, h3, h4, h5,
   background-repeat: no-repeat;
   background-position: top center;
   position: relative;
-  z-index: 0; }
+  z-index: 1; }
+  
   .hero-wrap.hero-wrap-2 {
     height: 500px !important;
     position: relative; }
@@ -8238,7 +8240,7 @@ h1, h2, h3, h4, h5,
       right: 0;
       bottom: 0;
       content: '';
-      opacity: .05;
+      opacity: 0.5;
       background: #000000; }
     .hero-wrap.hero-wrap-2 .slider-text {
       height: 500px !important; }
@@ -8247,7 +8249,9 @@ h1, h2, h3, h4, h5,
   height: 850px; }
   .slider-text h1 {
     font-size: 60px;
-    color: #000000;
+    color: #21bf73;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+
     line-height: 1.1;
     font-weight: 500; }
     .slider-text h1 span {
@@ -8402,6 +8406,16 @@ h1, h2, h3, h4, h5,
   box-shadow: none !important;
   font-size: 15px;
   font-weight: 500; }
+  .btn-about{
+    box-shadow: none !important;
+  font-size: 15px;
+  font-weight: 500;
+  background: #21bf73 !important;
+    border: 1px solid #21bf73 !important;
+    color: #fff !important; 
+    border-radius: 6px;
+    grid-template-columns: 1fr;
+  }
   .btn:hover, .btn:active, .btn:focus {
     outline: none; }
   .btn.btn-primary {
